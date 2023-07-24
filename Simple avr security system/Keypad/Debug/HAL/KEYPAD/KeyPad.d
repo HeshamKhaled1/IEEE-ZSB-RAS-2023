@@ -14,10 +14,11 @@ HAL/KEYPAD/KeyPad.d HAL/KEYPAD/KeyPad.o: ../HAL/KEYPAD/KeyPad.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- g:\ras\embedded\keypad\keypad\bit_math.h \
- g:\ras\embedded\keypad\keypad\std_types.h \
+ ../HAL/KEYPAD/../../MCAL/Dio/../../Bit_math.h \
+ ../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h \
  ../HAL/KEYPAD/../../MCAL/Dio/../Reg.h \
- g:\ras\embedded\keypad\keypad\std_types.h ../HAL/KEYPAD/KeyPad_Config.h
+ ../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h \
+ ../HAL/KEYPAD/KeyPad_Config.h
 
 ../HAL/KEYPAD/KeyPad.h:
 
@@ -51,12 +52,12 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 
-g:\ras\embedded\keypad\keypad\bit_math.h:
+../HAL/KEYPAD/../../MCAL/Dio/../../Bit_math.h:
 
-g:\ras\embedded\keypad\keypad\std_types.h:
+../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h:
 
 ../HAL/KEYPAD/../../MCAL/Dio/../Reg.h:
 
-g:\ras\embedded\keypad\keypad\std_types.h:
+../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h:
 
 ../HAL/KEYPAD/KeyPad_Config.h:

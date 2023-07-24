@@ -14,10 +14,10 @@ HAL/LCD/lcd.d HAL/LCD/lcd.o: ../HAL/LCD/lcd.c ../HAL/LCD/lcd.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- g:\ras\embedded\keypad\keypad\bit_math.h \
- g:\ras\embedded\keypad\keypad\std_types.h \
+ ../HAL/LCD/../../MCAL/Dio/../../Bit_math.h \
+ ../HAL/LCD/../../MCAL/Dio/../../std_types.h \
  ../HAL/LCD/../../MCAL/Dio/../Reg.h \
- g:\ras\embedded\keypad\keypad\std_types.h \
+ ../HAL/LCD/../../MCAL/Dio/../../std_types.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h
 
 ../HAL/LCD/lcd.h:
@@ -54,12 +54,12 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 
-g:\ras\embedded\keypad\keypad\bit_math.h:
+../HAL/LCD/../../MCAL/Dio/../../Bit_math.h:
 
-g:\ras\embedded\keypad\keypad\std_types.h:
+../HAL/LCD/../../MCAL/Dio/../../std_types.h:
 
 ../HAL/LCD/../../MCAL/Dio/../Reg.h:
 
-g:\ras\embedded\keypad\keypad\std_types.h:
+../HAL/LCD/../../MCAL/Dio/../../std_types.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
