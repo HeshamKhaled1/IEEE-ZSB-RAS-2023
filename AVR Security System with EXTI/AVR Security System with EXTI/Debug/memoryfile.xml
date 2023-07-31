@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="External Interrupt.elf">                 
+  <executable name="AVR Security System with EXTI.elf">                 
     <memory name="program">              
       <units>bytes</units>                 
       <length>32768</length>                 
-      <used>6166</used>                     
-      <free>26602</free>                     
+      <used>6160</used>                     
+      <free>26608</free>                     
     </memory>                              
     <memory name="data">                 
       <units>bytes</units>                 

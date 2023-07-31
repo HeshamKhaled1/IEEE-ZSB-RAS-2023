@@ -29,12 +29,10 @@ int main(void)
 {
 	dio_init();
 	/* Enable global Interrupt (Bit 7 or I-Bit) in SREG Register */
-	GI_Enable();							// Enable EXTI0
-	EXTI_Enable(EXTI0, EXTI_RISING_EDGE);
-	
-	Set_bit(EXTI_SREG,7);
-	EXTI_SetCallBack(&login,EXTI0);
-    while(1);
+	GI_Enable();
+	EXTI_Enable(EXTI0, EXTI_RISING_EDGE);	// Enable EXTI0
+	EXTI_SetCallBack(&login,EXTI0);			// send application function address to the ISR
+    while(1);								// super loop
 	return 0;
 }
 

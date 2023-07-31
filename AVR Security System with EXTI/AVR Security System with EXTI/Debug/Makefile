@@ -102,9 +102,9 @@ MCAL/DIO/Dio.d \
 MCAL/EXTI/EXTI.d \
 MCAL/GI/GI.d
 
-OUTPUT_FILE_PATH +=External\ Interrupt.elf
+OUTPUT_FILE_PATH +=AVR\ Security\ System\ with\ EXTI.elf
 
-OUTPUT_FILE_PATH_AS_ARGS +="External Interrupt.elf"
+OUTPUT_FILE_PATH_AS_ARGS +="AVR Security System with EXTI.elf"
 
 ADDITIONAL_DEPENDENCIES:=
 
@@ -198,11 +198,11 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking:  XC8 C Linker : 2.36
-	$(QUOTE)C:\Program Files\Microchip\xc8\v2.36\bin\xc8-cc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -mcpu=ATmega32  -mdfp="C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\xc8"  -Wl,-Map="External Interrupt.map" -funsigned-char -funsigned-bitfields -Wl,--start-group -Wl,-lm  -Wl,--end-group -Wl,--gc-sections -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums --memorysummary,memoryfile.xml  
+	$(QUOTE)C:\Program Files\Microchip\xc8\v2.36\bin\xc8-cc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -mcpu=ATmega32  -mdfp="C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\xc8"  -Wl,-Map="AVR Security System with EXTI.map" -funsigned-char -funsigned-bitfields -Wl,--start-group -Wl,-lm  -Wl,--end-group -Wl,--gc-sections -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums --memorysummary,memoryfile.xml  
 	@echo Finished building target: $@
-	"C:\Program Files\Microchip\xc8\v2.36\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "External Interrupt.elf" "External Interrupt.hex"
-	"C:\Program Files\Microchip\xc8\v2.36\bin\avr-objcopy.exe" -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 --no-change-warnings -O ihex "External Interrupt.elf" "External Interrupt.eep" || exit 0
-	"C:\Program Files\Microchip\xc8\v2.36\bin\avr-objdump.exe" -h -S "External Interrupt.elf" > "External Interrupt.lss"
+	"C:\Program Files\Microchip\xc8\v2.36\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "AVR Security System with EXTI.elf" "AVR Security System with EXTI.hex"
+	"C:\Program Files\Microchip\xc8\v2.36\bin\avr-objcopy.exe" -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 --no-change-warnings -O ihex "AVR Security System with EXTI.elf" "AVR Security System with EXTI.eep" || exit 0
+	"C:\Program Files\Microchip\xc8\v2.36\bin\avr-objdump.exe" -h -S "AVR Security System with EXTI.elf" > "AVR Security System with EXTI.lss"
 	
 	
 
@@ -214,5 +214,5 @@ $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER
 clean:
 	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
 	-$(RM) $(C_DEPS_AS_ARGS)   
-	rm -rf "External Interrupt.elf" "External Interrupt.hex" "External Interrupt.eep" "External Interrupt.map" "External Interrupt.usersignatures" "External Interrupt.a"  "External Interrupt.lss"
+	rm -rf "AVR Security System with EXTI.elf" "AVR Security System with EXTI.hex" "AVR Security System with EXTI.eep" "AVR Security System with EXTI.map" "AVR Security System with EXTI.usersignatures" "AVR Security System with EXTI.a"  "AVR Security System with EXTI.lss"
 	

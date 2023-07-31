@@ -110,6 +110,12 @@ u8 EXTI_Enable(u8 EXTI_Index, u8 EXTI_Edge)
 	return ret;
 }
 
+/*  CallBack function
+	job: to pass address of application layer to ISR.
+	parameters:-
+				void(*pf_ISR)(void): pointer to ISR function.
+				EXTI_Index: the index of the external interrupt (pointer to application function index).
+ */
 
 u8  EXTI_SetCallBack(void(*pf_ISR)(void), u8 EXTI_Index)
 {
@@ -162,7 +168,7 @@ void __vector_1(void)
 {
 	if(EXTI_Apf[EXTI0] != NULL)
 	{
-		EXTI_Apf[EXTI0]();
+		EXTI_Apf[EXTI0]();			// Execute the application function at external interrupt 0
 	}
 }
 
@@ -172,7 +178,7 @@ void __vector_2(void)
 {
 	if(EXTI_Apf[EXTI1] != NULL)
 	{
-		EXTI_Apf[EXTI1]();
+		EXTI_Apf[EXTI1]();			// Execute the application function at external interrupt 1
 	}
 }
 
@@ -182,6 +188,6 @@ void __vector_3(void)
 {
 	if(EXTI_Apf[EXTI2] != NULL)
 	{
-		EXTI_Apf[EXTI2]();
+		EXTI_Apf[EXTI2]();			// Execute the application function at external interrupt 2
 	}
 }
