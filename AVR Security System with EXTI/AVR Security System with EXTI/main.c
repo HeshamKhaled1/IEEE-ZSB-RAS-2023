@@ -15,7 +15,7 @@
 #include "HAL/KEYPAD/KeyPad.h"
 #include "HAL/Stepper Motor/stepper.h"
 #include "HAL/DC Motor/DC Motor.h"
-#include "Bit_math.h"
+#include "LIBRARIES/Bit_math.h"
 
 # define F_CPU 8000000UL
 #define PASSWORD_LENGTH 4

@@ -1,8 +1,18 @@
+/*
+ * lcd.c
+ *
+ * Updated: 2023-08-01 11:22:40 PM
+ *  Author: Deebo
+ */ 
+
+/* ----------------- Includes -----------------*/
 #include "lcd.h"
 
+/* ----------------- Software Interfaces Declarations -----------------*/
 static void Trigger_Enable();
 static void Set_Cursor_Pos(u8 row, u8 column);
 
+/* ----------------- Software Interfaces definition -----------------*/
  void LCD_Init(void)
 {
 	Dio_PinMode(LCD_DATA4_PIN, OUTPUT);
@@ -28,16 +38,16 @@ void LCD_Send_Command(u8 command)
 {
 	Dio_PinWrite(LCD_RS_PIN, LOW);
 
-    (Get_bit(command, 7)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
-    (Get_bit(command, 6)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
-    (Get_bit(command, 5)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
-    (Get_bit(command, 4)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(command, 7)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
+    (Get_bit(command, 6)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
+    (Get_bit(command, 5)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
+    (Get_bit(command, 4)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
     // Trigger Enable
     Trigger_Enable();
-    (Get_bit(command, 3)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
-    (Get_bit(command, 2)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
-    (Get_bit(command, 1)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
-    (Get_bit(command, 0)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(command, 3)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
+    (Get_bit(command, 2)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
+    (Get_bit(command, 1)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
+    (Get_bit(command, 0)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
     // Trigger Enable
     Trigger_Enable();
 }
@@ -45,16 +55,16 @@ void LCD_Send_Char(u8 _char)
 {
 	Dio_PinWrite(LCD_RS_PIN, HIGH);
 
-    (Get_bit(_char, 7)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
-    (Get_bit(_char, 6)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
-    (Get_bit(_char, 5)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
-    (Get_bit(_char, 4)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(_char, 7)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
+    (Get_bit(_char, 6)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
+    (Get_bit(_char, 5)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
+    (Get_bit(_char, 4)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
     // Trigger Enable
     Trigger_Enable();
-    (Get_bit(_char, 3)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
-    (Get_bit(_char, 2)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
-    (Get_bit(_char, 1)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
-    (Get_bit(_char, 0)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(_char, 3)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
+    (Get_bit(_char, 2)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
+    (Get_bit(_char, 1)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
+    (Get_bit(_char, 0)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
     // Trigger Enable
     Trigger_Enable();
 }

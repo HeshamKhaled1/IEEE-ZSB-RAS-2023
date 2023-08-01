@@ -6,8 +6,8 @@
  */ 
 
 /* ----------------- Includes -----------------*/
-#include "../../std_types.h"
-#include "../../Bit_math.h"
+#include "../../LIBRARIES/std_types.h"
+#include "../../LIBRARIES/Bit_math.h"
 #include "GI.h"
 
 /* ----------------- Software Interfaces definition -----------------*/

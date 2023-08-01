@@ -15,8 +15,9 @@ MCAL/DIO/Dio.d MCAL/DIO/Dio.o: ../MCAL/DIO/Dio.c ../MCAL/DIO/Dio.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h \
- ../MCAL/DIO/../../Bit_math.h ../MCAL/DIO/../../std_types.h \
- ../MCAL/DIO/../Reg.h ../MCAL/DIO/../../std_types.h
+ ../MCAL/DIO/../../LIBRARIES/Bit_math.h \
+ ../MCAL/DIO/../../LIBRARIES/std_types.h ../MCAL/DIO/../Reg.h \
+ ../MCAL/DIO/../../LIBRARIES/std_types.h
 
 ../MCAL/DIO/Dio.h:
 
@@ -52,10 +53,10 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
-../MCAL/DIO/../../Bit_math.h:
+../MCAL/DIO/../../LIBRARIES/Bit_math.h:
 
-../MCAL/DIO/../../std_types.h:
+../MCAL/DIO/../../LIBRARIES/std_types.h:
 
 ../MCAL/DIO/../Reg.h:
 
-../MCAL/DIO/../../std_types.h:
+../MCAL/DIO/../../LIBRARIES/std_types.h:

@@ -17,11 +17,11 @@ main.d main.o: .././main.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h \
- .././MCAL/EXTI/EXTI.h .././MCAL/EXTI/../../std_types.h \
+ .././MCAL/EXTI/EXTI.h .././MCAL/EXTI/../../LIBRARIES/std_types.h \
  .././MCAL/EXTI/EXTI_Configuration.h .././MCAL/GI/GI.h \
- .././MCAL/DIO/Dio.h .././MCAL/DIO/../../Bit_math.h \
- .././MCAL/DIO/../../std_types.h .././MCAL/DIO/../Reg.h \
- .././MCAL/DIO/../../std_types.h .././HAL/LCD/lcd.h \
+ .././MCAL/DIO/Dio.h .././MCAL/DIO/../../LIBRARIES/Bit_math.h \
+ .././MCAL/DIO/../../LIBRARIES/std_types.h .././MCAL/DIO/../Reg.h \
+ .././MCAL/DIO/../../LIBRARIES/std_types.h .././HAL/LCD/lcd.h \
  .././HAL/LCD/lcd_config.h .././HAL/LCD/../../MCAL/Dio/Dio.h \
  c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h \
  .././HAL/KEYPAD/KeyPad.h .././HAL/KEYPAD/../../MCAL/Dio/Dio.h \
@@ -30,7 +30,7 @@ main.d main.o: .././main.c \
  .././HAL/DC\ Motor/DC\ Motor.h \
  .././HAL/DC\ Motor/DC\ Motor_configuration.h \
  .././HAL/DC\ Motor/../../MCAL/DIO/Dio.h \
- .././HAL/DC\ Motor/../../std_types.h .././Bit_math.h
+ .././HAL/DC\ Motor/../../LIBRARIES/std_types.h .././LIBRARIES/Bit_math.h
 
 c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\xc.h:
 
@@ -70,7 +70,7 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
 .././MCAL/EXTI/EXTI.h:
 
-.././MCAL/EXTI/../../std_types.h:
+.././MCAL/EXTI/../../LIBRARIES/std_types.h:
 
 .././MCAL/EXTI/EXTI_Configuration.h:
 
@@ -78,13 +78,13 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
 .././MCAL/DIO/Dio.h:
 
-.././MCAL/DIO/../../Bit_math.h:
+.././MCAL/DIO/../../LIBRARIES/Bit_math.h:
 
-.././MCAL/DIO/../../std_types.h:
+.././MCAL/DIO/../../LIBRARIES/std_types.h:
 
 .././MCAL/DIO/../Reg.h:
 
-.././MCAL/DIO/../../std_types.h:
+.././MCAL/DIO/../../LIBRARIES/std_types.h:
 
 .././HAL/LCD/lcd.h:
 
@@ -110,6 +110,6 @@ c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h:
 
 .././HAL/DC\ Motor/../../MCAL/DIO/Dio.h:
 
-.././HAL/DC\ Motor/../../std_types.h:
+.././HAL/DC\ Motor/../../LIBRARIES/std_types.h:
 
-.././Bit_math.h:
+.././LIBRARIES/Bit_math.h:

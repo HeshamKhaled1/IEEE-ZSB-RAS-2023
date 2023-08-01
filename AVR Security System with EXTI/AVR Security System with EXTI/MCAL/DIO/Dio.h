@@ -3,8 +3,8 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
-#include "../../Bit_math.h"
-#include "../../std_types.h"
+#include "../../LIBRARIES/Bit_math.h"
+#include "../../LIBRARIES/std_types.h"
 #include "../Reg.h"
 
 /* Section: Macro Declarations */
@@ -24,10 +24,10 @@
 #define _PA1		11
 #define _PA2		12
 #define _PA3		13
-#define _PA4		14
-#define _PA5		15
-#define _PA6		16
-#define _PA7		17
+#define LCD_DATA4_PIN		14
+#define LCD_DATA5_PIN		15
+#define LCD_DATA6_PIN		16
+#define LCD_DATA7_PIN		17
 
 #define _PB0		20
 #define _PB1		21

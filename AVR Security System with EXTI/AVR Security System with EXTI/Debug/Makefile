@@ -41,7 +41,8 @@ SUBDIRS :=  \
 ../HAL \
 ../MCAL/DIO \
 ../MCAL/EXTI \
-../MCAL/GI
+../MCAL/GI \
+../LIBRARIES
 
 
 # Add inputs and outputs from these tool invocations to the build variables 

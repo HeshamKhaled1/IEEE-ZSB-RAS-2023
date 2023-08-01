@@ -13,23 +13,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   4 .debug_aranges 00000240  00000000  00000000  00001997  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   000058ac  00000000  00000000  00001bd7  2**0
+  5 .debug_info   00005901  00000000  00000000  00001bd7  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 00000e36  00000000  00000000  00007483  2**0
+  6 .debug_abbrev 00000e36  00000000  00000000  000074d8  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00001f74  00000000  00000000  000082b9  2**0
+  7 .debug_line   00001fbd  00000000  00000000  0000830e  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  00000534  00000000  00000000  0000a230  2**2
+  8 .debug_frame  00000534  00000000  00000000  0000a2cc  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000003d9  00000000  00000000  0000a764  2**0
+  9 .debug_str    000003d9  00000000  00000000  0000a800  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00001b5d  00000000  00000000  0000ab3d  2**0
+ 10 .debug_loc    00001b5d  00000000  00000000  0000abd9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000208  00000000  00000000  0000c69a  2**0
+ 11 .debug_ranges 00000208  00000000  00000000  0000c736  2**0
                   CONTENTS, READONLY, DEBUGGING
  12 .text         00000004  00001802  00001802  00001896  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000c8a4  2**2
+ 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000c940  2**2
                   CONTENTS, READONLY, DEBUGGING
  14 .text.dc_motor_init 00000024  00001640  00001640  000016d4  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
@@ -541,7 +541,7 @@ void LCD_Send_Command(u8 command)
  c88:	84 e1       	ldi	r24, 0x14	; 20
  c8a:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
 
-    (Get_bit(command, 7)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
+    (Get_bit(command, 7)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
  c8e:	cc 23       	and	r28, r28
  c90:	2c f4       	brge	.+10     	; 0xc9c <LCD_Send_Command+0x1a>
  c92:	61 e0       	ldi	r22, 0x01	; 1
@@ -551,7 +551,7 @@ void LCD_Send_Command(u8 command)
  c9c:	62 e0       	ldi	r22, 0x02	; 2
  c9e:	81 e1       	ldi	r24, 0x11	; 17
  ca0:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(command, 6)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
+    (Get_bit(command, 6)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
  ca4:	c6 ff       	sbrs	r28, 6
  ca6:	05 c0       	rjmp	.+10     	; 0xcb2 <LCD_Send_Command+0x30>
  ca8:	61 e0       	ldi	r22, 0x01	; 1
@@ -561,7 +561,7 @@ void LCD_Send_Command(u8 command)
  cb2:	62 e0       	ldi	r22, 0x02	; 2
  cb4:	80 e1       	ldi	r24, 0x10	; 16
  cb6:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(command, 5)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
+    (Get_bit(command, 5)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
  cba:	c5 ff       	sbrs	r28, 5
  cbc:	05 c0       	rjmp	.+10     	; 0xcc8 <LCD_Send_Command+0x46>
  cbe:	61 e0       	ldi	r22, 0x01	; 1
@@ -571,7 +571,7 @@ void LCD_Send_Command(u8 command)
  cc8:	62 e0       	ldi	r22, 0x02	; 2
  cca:	8f e0       	ldi	r24, 0x0F	; 15
  ccc:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(command, 4)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(command, 4)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
  cd0:	c4 ff       	sbrs	r28, 4
  cd2:	05 c0       	rjmp	.+10     	; 0xcde <LCD_Send_Command+0x5c>
  cd4:	61 e0       	ldi	r22, 0x01	; 1
@@ -584,7 +584,7 @@ void LCD_Send_Command(u8 command)
     // Trigger Enable
     Trigger_Enable();
  ce6:	0e 94 fa 0a 	call	0x15f4	; 0x15f4 <Trigger_Enable>
-    (Get_bit(command, 3)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
+    (Get_bit(command, 3)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
  cea:	c3 ff       	sbrs	r28, 3
  cec:	05 c0       	rjmp	.+10     	; 0xcf8 <LCD_Send_Command+0x76>
  cee:	61 e0       	ldi	r22, 0x01	; 1
@@ -594,7 +594,7 @@ void LCD_Send_Command(u8 command)
  cf8:	62 e0       	ldi	r22, 0x02	; 2
  cfa:	81 e1       	ldi	r24, 0x11	; 17
  cfc:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(command, 2)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
+    (Get_bit(command, 2)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
  d00:	c2 ff       	sbrs	r28, 2
  d02:	05 c0       	rjmp	.+10     	; 0xd0e <LCD_Send_Command+0x8c>
  d04:	61 e0       	ldi	r22, 0x01	; 1
@@ -604,7 +604,7 @@ void LCD_Send_Command(u8 command)
  d0e:	62 e0       	ldi	r22, 0x02	; 2
  d10:	80 e1       	ldi	r24, 0x10	; 16
  d12:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(command, 1)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
+    (Get_bit(command, 1)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
  d16:	c1 ff       	sbrs	r28, 1
  d18:	05 c0       	rjmp	.+10     	; 0xd24 <LCD_Send_Command+0xa2>
  d1a:	61 e0       	ldi	r22, 0x01	; 1
@@ -614,7 +614,7 @@ void LCD_Send_Command(u8 command)
  d24:	62 e0       	ldi	r22, 0x02	; 2
  d26:	8f e0       	ldi	r24, 0x0F	; 15
  d28:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(command, 0)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(command, 0)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
  d2c:	c0 ff       	sbrs	r28, 0
  d2e:	05 c0       	rjmp	.+10     	; 0xd3a <LCD_Send_Command+0xb8>
  d30:	61 e0       	ldi	r22, 0x01	; 1
@@ -634,9 +634,9 @@ void LCD_Send_Command(u8 command)
 Disassembly of section .text.LCD_Init:
 
 00001310 <LCD_Init>:
-static void Trigger_Enable();
 static void Set_Cursor_Pos(u8 row, u8 column);
 
+/* ----------------- Software Interfaces definition -----------------*/
  void LCD_Init(void)
 {
 	Dio_PinMode(LCD_DATA4_PIN, OUTPUT);
@@ -738,7 +738,7 @@ static void Set_Cursor_Pos(u8 row, u8 column)
 Disassembly of section .text.LCD_Send_Char:
 
 00000d4a <LCD_Send_Char>:
-    (Get_bit(command, 0)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(command, 0)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
     // Trigger Enable
     Trigger_Enable();
 }
@@ -751,7 +751,7 @@ void LCD_Send_Char(u8 _char)
  d50:	84 e1       	ldi	r24, 0x14	; 20
  d52:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
 
-    (Get_bit(_char, 7)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
+    (Get_bit(_char, 7)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
  d56:	cc 23       	and	r28, r28
  d58:	2c f4       	brge	.+10     	; 0xd64 <LCD_Send_Char+0x1a>
  d5a:	61 e0       	ldi	r22, 0x01	; 1
@@ -761,7 +761,7 @@ void LCD_Send_Char(u8 _char)
  d64:	62 e0       	ldi	r22, 0x02	; 2
  d66:	81 e1       	ldi	r24, 0x11	; 17
  d68:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(_char, 6)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
+    (Get_bit(_char, 6)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
  d6c:	c6 ff       	sbrs	r28, 6
  d6e:	05 c0       	rjmp	.+10     	; 0xd7a <LCD_Send_Char+0x30>
  d70:	61 e0       	ldi	r22, 0x01	; 1
@@ -771,7 +771,7 @@ void LCD_Send_Char(u8 _char)
  d7a:	62 e0       	ldi	r22, 0x02	; 2
  d7c:	80 e1       	ldi	r24, 0x10	; 16
  d7e:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(_char, 5)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
+    (Get_bit(_char, 5)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
  d82:	c5 ff       	sbrs	r28, 5
  d84:	05 c0       	rjmp	.+10     	; 0xd90 <LCD_Send_Char+0x46>
  d86:	61 e0       	ldi	r22, 0x01	; 1
@@ -781,7 +781,7 @@ void LCD_Send_Char(u8 _char)
  d90:	62 e0       	ldi	r22, 0x02	; 2
  d92:	8f e0       	ldi	r24, 0x0F	; 15
  d94:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(_char, 4)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(_char, 4)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
  d98:	c4 ff       	sbrs	r28, 4
  d9a:	05 c0       	rjmp	.+10     	; 0xda6 <LCD_Send_Char+0x5c>
  d9c:	61 e0       	ldi	r22, 0x01	; 1
@@ -794,7 +794,7 @@ void LCD_Send_Char(u8 _char)
     // Trigger Enable
     Trigger_Enable();
  dae:	0e 94 fa 0a 	call	0x15f4	; 0x15f4 <Trigger_Enable>
-    (Get_bit(_char, 3)) ? Dio_PinWrite(_PA7, HIGH) : Dio_PinWrite(_PA7, LOW);
+    (Get_bit(_char, 3)) ? Dio_PinWrite(LCD_DATA7_PIN, HIGH) : Dio_PinWrite(LCD_DATA7_PIN, LOW);
  db2:	c3 ff       	sbrs	r28, 3
  db4:	05 c0       	rjmp	.+10     	; 0xdc0 <LCD_Send_Char+0x76>
  db6:	61 e0       	ldi	r22, 0x01	; 1
@@ -804,7 +804,7 @@ void LCD_Send_Char(u8 _char)
  dc0:	62 e0       	ldi	r22, 0x02	; 2
  dc2:	81 e1       	ldi	r24, 0x11	; 17
  dc4:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(_char, 2)) ? Dio_PinWrite(_PA6, HIGH) : Dio_PinWrite(_PA6, LOW);
+    (Get_bit(_char, 2)) ? Dio_PinWrite(LCD_DATA6_PIN, HIGH) : Dio_PinWrite(LCD_DATA6_PIN, LOW);
  dc8:	c2 ff       	sbrs	r28, 2
  dca:	05 c0       	rjmp	.+10     	; 0xdd6 <LCD_Send_Char+0x8c>
  dcc:	61 e0       	ldi	r22, 0x01	; 1
@@ -814,7 +814,7 @@ void LCD_Send_Char(u8 _char)
  dd6:	62 e0       	ldi	r22, 0x02	; 2
  dd8:	80 e1       	ldi	r24, 0x10	; 16
  dda:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(_char, 1)) ? Dio_PinWrite(_PA5, HIGH) : Dio_PinWrite(_PA5, LOW);
+    (Get_bit(_char, 1)) ? Dio_PinWrite(LCD_DATA5_PIN, HIGH) : Dio_PinWrite(LCD_DATA5_PIN, LOW);
  dde:	c1 ff       	sbrs	r28, 1
  de0:	05 c0       	rjmp	.+10     	; 0xdec <LCD_Send_Char+0xa2>
  de2:	61 e0       	ldi	r22, 0x01	; 1
@@ -824,7 +824,7 @@ void LCD_Send_Char(u8 _char)
  dec:	62 e0       	ldi	r22, 0x02	; 2
  dee:	8f e0       	ldi	r24, 0x0F	; 15
  df0:	0e 94 5d 04 	call	0x8ba	; 0x8ba <Dio_PinWrite>
-    (Get_bit(_char, 0)) ? Dio_PinWrite(_PA4, HIGH) : Dio_PinWrite(_PA4, LOW);
+    (Get_bit(_char, 0)) ? Dio_PinWrite(LCD_DATA4_PIN, HIGH) : Dio_PinWrite(LCD_DATA4_PIN, LOW);
  df4:	c0 ff       	sbrs	r28, 0
  df6:	05 c0       	rjmp	.+10     	; 0xe02 <LCD_Send_Char+0xb8>
  df8:	61 e0       	ldi	r22, 0x01	; 1

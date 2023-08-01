@@ -6,7 +6,7 @@
  */ 
 
 /* ----------------- Includes -----------------*/
-#include "../../std_types.h"
+#include "../../LIBRARIES/std_types.h"
 
 /* ----------------- Macro Declarations -----------------*/
 #define EXTI_MCUCR			*((volatile u8*)0x55)		// MCU Control Register

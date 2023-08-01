@@ -7,8 +7,8 @@
 
 /* ----------------- Includes -----------------*/
 #include <stddef.h>
-#include "../../std_types.h"
-#include "../../Bit_math.h"
+#include "../../LIBRARIES/std_types.h"
+#include "../../LIBRARIES/Bit_math.h"
 #include "EXTI.h"
 #include "EXTI_Configuration.h"
 

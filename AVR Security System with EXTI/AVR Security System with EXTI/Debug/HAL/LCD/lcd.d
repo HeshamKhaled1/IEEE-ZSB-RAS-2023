@@ -16,10 +16,10 @@ HAL/LCD/lcd.d HAL/LCD/lcd.o: ../HAL/LCD/lcd.c ../HAL/LCD/lcd.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h \
- ../HAL/LCD/../../MCAL/Dio/../../Bit_math.h \
- ../HAL/LCD/../../MCAL/Dio/../../std_types.h \
+ ../HAL/LCD/../../MCAL/Dio/../../LIBRARIES/Bit_math.h \
+ ../HAL/LCD/../../MCAL/Dio/../../LIBRARIES/std_types.h \
  ../HAL/LCD/../../MCAL/Dio/../Reg.h \
- ../HAL/LCD/../../MCAL/Dio/../../std_types.h \
+ ../HAL/LCD/../../MCAL/Dio/../../LIBRARIES/std_types.h \
  c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h
 
 ../HAL/LCD/lcd.h:
@@ -60,12 +60,12 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
-../HAL/LCD/../../MCAL/Dio/../../Bit_math.h:
+../HAL/LCD/../../MCAL/Dio/../../LIBRARIES/Bit_math.h:
 
-../HAL/LCD/../../MCAL/Dio/../../std_types.h:
+../HAL/LCD/../../MCAL/Dio/../../LIBRARIES/std_types.h:
 
 ../HAL/LCD/../../MCAL/Dio/../Reg.h:
 
-../HAL/LCD/../../MCAL/Dio/../../std_types.h:
+../HAL/LCD/../../MCAL/Dio/../../LIBRARIES/std_types.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h:

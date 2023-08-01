@@ -10,7 +10,7 @@
 #define EXTI_H_
 
 /* ----------------- Includes -----------------*/
-#include "../../std_types.h"
+#include "../../LIBRARIES/std_types.h"
 
 /* ----------------- Macro Declarations -----------------*/
 #define EXTI0						0
@@ -22,11 +22,11 @@
 #define EXTI_ANY_LOGICAL_CHANGE		2
 #define EXTI_LOW_LEVEL				3
 
-#define   EXTI_EXTI0_ISC01			1
-#define   EXTI_EXTI0_ISC00			0
-#define   EXTI_EXTI1_ISC11			3
-#define   EXTI_EXTI1_ISC10			2
-#define   EXTI_EXTI2_ISC2			6
+#define EXTI_EXTI0_ISC01			1
+#define EXTI_EXTI0_ISC00			0
+#define EXTI_EXTI1_ISC11			3
+#define EXTI_EXTI1_ISC10			2
+#define EXTI_EXTI2_ISC2				6
 
 #define EXTI0_PIN6					6
 #define EXTI1_PIN7					7

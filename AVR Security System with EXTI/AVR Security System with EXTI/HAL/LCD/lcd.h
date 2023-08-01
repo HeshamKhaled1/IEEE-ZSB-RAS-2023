@@ -1,11 +1,20 @@
+/*
+ * lcd.h
+ *
+ * Updated: 2023-08-01 11:23:10 PM
+ *  Author: Deebo
+ */ 
+
 #ifndef HAL_LCD_LCD_H_
 #define HAL_LCD_LCD_H_
 
+/* ----------------- Includes -----------------*/
 #include "lcd_config.h"
 #include "../../MCAL/Dio/Dio.h"
 #include <util/delay.h>
 #include <stdbool.h>
 
+/* ----------------- Macro Declarations -----------------*/
 #define _LCD_CLEAR									0X01
 #define _LCD_RETURN_HOME							0x02
 #define _LCD_ENTRY_MODE_DEC_SHIFT_OFF				0x04
@@ -29,6 +38,7 @@
 #define _LCD_CGRAM_START							0x40
 #define _LCD_DDRAM_START							0x80
 
+/* ----------------- Software Interfaces Declarations -----------------*/
 void LCD_Init(void);
 void LCD_Send_Command(u8 command);
 void LCD_Send_Char(u8 _char);

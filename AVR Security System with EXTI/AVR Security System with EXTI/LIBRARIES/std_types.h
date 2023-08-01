@@ -29,12 +29,4 @@ typedef enum{
 	E_NOT_OK
 }return_type;
 
-/* Section: Macro Declarations */
-/*
-#define E_OK         (u8)0x01
-#define E_NOT_OK     (u8)0x00
-
-#define ZERO_INIT 0
-*/
-
 #endif	/* STD_TYPES_H */

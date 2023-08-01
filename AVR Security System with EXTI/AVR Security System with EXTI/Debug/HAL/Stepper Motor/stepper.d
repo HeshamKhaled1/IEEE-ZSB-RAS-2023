@@ -17,10 +17,10 @@ HAL/Stepper Motor/stepper.d HAL/Stepper Motor/stepper.o: \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h \
- ../HAL/Stepper\ Motor/../../MCAL/Dio/../../Bit_math.h \
- ../HAL/Stepper\ Motor/../../MCAL/Dio/../../std_types.h \
+ ../HAL/Stepper\ Motor/../../MCAL/Dio/../../LIBRARIES/Bit_math.h \
+ ../HAL/Stepper\ Motor/../../MCAL/Dio/../../LIBRARIES/std_types.h \
  ../HAL/Stepper\ Motor/../../MCAL/Dio/../Reg.h \
- ../HAL/Stepper\ Motor/../../MCAL/Dio/../../std_types.h \
+ ../HAL/Stepper\ Motor/../../MCAL/Dio/../../LIBRARIES/std_types.h \
  ../HAL/Stepper\ Motor/Stepper_Config.h
 
 ../HAL/Stepper\ Motor/stepper.h:
@@ -59,12 +59,12 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
-../HAL/Stepper\ Motor/../../MCAL/Dio/../../Bit_math.h:
+../HAL/Stepper\ Motor/../../MCAL/Dio/../../LIBRARIES/Bit_math.h:
 
-../HAL/Stepper\ Motor/../../MCAL/Dio/../../std_types.h:
+../HAL/Stepper\ Motor/../../MCAL/Dio/../../LIBRARIES/std_types.h:
 
 ../HAL/Stepper\ Motor/../../MCAL/Dio/../Reg.h:
 
-../HAL/Stepper\ Motor/../../MCAL/Dio/../../std_types.h:
+../HAL/Stepper\ Motor/../../MCAL/Dio/../../LIBRARIES/std_types.h:
 
 ../HAL/Stepper\ Motor/Stepper_Config.h:

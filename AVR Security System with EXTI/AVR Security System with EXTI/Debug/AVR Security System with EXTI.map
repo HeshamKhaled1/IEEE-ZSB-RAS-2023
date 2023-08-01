@@ -583,17 +583,17 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x58ac
+.debug_info     0x0000000000000000     0x5901
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  .debug_info    0x00000000000004e6      0x461 HAL/DC Motor/DC Motor.o
- .debug_info    0x0000000000000947      0x552 HAL/KEYPAD/KeyPad.o
- .debug_info    0x0000000000000e99      0xc38 HAL/LCD/lcd.o
- .debug_info    0x0000000000001ad1     0x130e HAL/Stepper Motor/stepper.o
- .debug_info    0x0000000000002ddf     0x1f40 main.o
- .debug_info    0x0000000000004d1f      0x4d7 MCAL/DIO/Dio.o
- .debug_info    0x00000000000051f6      0x431 MCAL/EXTI/EXTI.o
- .debug_info    0x0000000000005627      0x285 MCAL/GI/GI.o
+ .debug_info    0x0000000000000947      0x563 HAL/KEYPAD/KeyPad.o
+ .debug_info    0x0000000000000eaa      0xc49 HAL/LCD/lcd.o
+ .debug_info    0x0000000000001af3     0x131f HAL/Stepper Motor/stepper.o
+ .debug_info    0x0000000000002e12     0x1f40 main.o
+ .debug_info    0x0000000000004d52      0x4e8 MCAL/DIO/Dio.o
+ .debug_info    0x000000000000523a      0x431 MCAL/EXTI/EXTI.o
+ .debug_info    0x000000000000566b      0x296 MCAL/GI/GI.o
 
 .debug_abbrev   0x0000000000000000      0xe36
  *(.debug_abbrev)
@@ -607,17 +607,17 @@ END GROUP
  .debug_abbrev  0x0000000000000cfc       0xf6 MCAL/EXTI/EXTI.o
  .debug_abbrev  0x0000000000000df2       0x44 MCAL/GI/GI.o
 
-.debug_line     0x0000000000000000     0x1f74
+.debug_line     0x0000000000000000     0x1fbd
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x119 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr5/memx-const/crtatmega32.o
  .debug_line    0x0000000000000119      0x128 HAL/DC Motor/DC Motor.o
- .debug_line    0x0000000000000241      0x1eb HAL/KEYPAD/KeyPad.o
- .debug_line    0x000000000000042c      0x4d2 HAL/LCD/lcd.o
- .debug_line    0x00000000000008fe      0x72a HAL/Stepper Motor/stepper.o
- .debug_line    0x0000000000001028      0x952 main.o
- .debug_line    0x000000000000197a      0x2b4 MCAL/DIO/Dio.o
- .debug_line    0x0000000000001c2e      0x2cd MCAL/EXTI/EXTI.o
- .debug_line    0x0000000000001efb       0x79 MCAL/GI/GI.o
+ .debug_line    0x0000000000000241      0x1f5 HAL/KEYPAD/KeyPad.o
+ .debug_line    0x0000000000000436      0x4df HAL/LCD/lcd.o
+ .debug_line    0x0000000000000915      0x734 HAL/Stepper Motor/stepper.o
+ .debug_line    0x0000000000001049      0x95c main.o
+ .debug_line    0x00000000000019a5      0x2be MCAL/DIO/Dio.o
+ .debug_line    0x0000000000001c63      0x2d7 MCAL/EXTI/EXTI.o
+ .debug_line    0x0000000000001f3a       0x83 MCAL/GI/GI.o
 
 .debug_frame    0x0000000000000000      0x534
  *(.debug_frame)

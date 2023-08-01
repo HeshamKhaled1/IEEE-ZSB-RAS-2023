@@ -1,7 +1,7 @@
 #ifndef REGISTERS_H_
 #define REGISTERS_H_
 
-#include "../std_types.h"
+#include "../LIBRARIES/std_types.h"
 /* Port A */
 #define _PINA	*( (volatile u8 *) 0x39 )
 #define _DDRA	*( (volatile u8 *) 0x3A )

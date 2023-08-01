@@ -16,10 +16,10 @@ HAL/KEYPAD/KeyPad.d HAL/KEYPAD/KeyPad.o: ../HAL/KEYPAD/KeyPad.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h \
- ../HAL/KEYPAD/../../MCAL/Dio/../../Bit_math.h \
- ../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h \
+ ../HAL/KEYPAD/../../MCAL/Dio/../../LIBRARIES/Bit_math.h \
+ ../HAL/KEYPAD/../../MCAL/Dio/../../LIBRARIES/std_types.h \
  ../HAL/KEYPAD/../../MCAL/Dio/../Reg.h \
- ../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h \
+ ../HAL/KEYPAD/../../MCAL/Dio/../../LIBRARIES/std_types.h \
  ../HAL/KEYPAD/KeyPad_Config.h
 
 ../HAL/KEYPAD/KeyPad.h:
@@ -58,12 +58,12 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
-../HAL/KEYPAD/../../MCAL/Dio/../../Bit_math.h:
+../HAL/KEYPAD/../../MCAL/Dio/../../LIBRARIES/Bit_math.h:
 
-../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h:
+../HAL/KEYPAD/../../MCAL/Dio/../../LIBRARIES/std_types.h:
 
 ../HAL/KEYPAD/../../MCAL/Dio/../Reg.h:
 
-../HAL/KEYPAD/../../MCAL/Dio/../../std_types.h:
+../HAL/KEYPAD/../../MCAL/Dio/../../LIBRARIES/std_types.h:
 
 ../HAL/KEYPAD/KeyPad_Config.h:

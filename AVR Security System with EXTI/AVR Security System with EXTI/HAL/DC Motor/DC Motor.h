@@ -12,7 +12,7 @@
 /* ----------------- Includes -----------------*/
 #include "DC Motor_configuration.h"
 #include "../../MCAL/DIO/Dio.h"
-#include "../../std_types.h"
+#include "../../LIBRARIES/std_types.h"
 
 /* ----------------- Macro Declarations -----------------*/
 #define DC_MOTOR_ON_STATUS  0x01U
