@@ -13,23 +13,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   4 .debug_aranges 000000e8  00000000  00000000  00000537  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   000013fd  00000000  00000000  0000061f  2**0
+  5 .debug_info   000013e3  00000000  00000000  0000061f  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 00000723  00000000  00000000  00001a1c  2**0
+  6 .debug_abbrev 00000723  00000000  00000000  00001a02  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   000006d1  00000000  00000000  0000213f  2**0
+  7 .debug_line   000006d1  00000000  00000000  00002125  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  000001f0  00000000  00000000  00002810  2**2
+  8 .debug_frame  000001f0  00000000  00000000  000027f8  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000001dc  00000000  00000000  00002a00  2**0
+  9 .debug_str    000001dc  00000000  00000000  000029e8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000494  00000000  00000000  00002bdc  2**0
+ 10 .debug_loc    00000494  00000000  00000000  00002bc4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 000000a8  00000000  00000000  00003070  2**0
+ 11 .debug_ranges 000000a8  00000000  00000000  00003058  2**0
                   CONTENTS, READONLY, DEBUGGING
  12 .text         00000004  00000458  00000458  000004ec  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00003118  2**2
+ 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00003100  2**2
                   CONTENTS, READONLY, DEBUGGING
  14 .text.app_toggleLED 00000026  000003d8  000003d8  0000046c  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
@@ -37,7 +37,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
  16 .text.main    00000016  000003fe  000003fe  00000492  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 17 .bss.flag.2002 00000001  00800068  00800068  000004fa  2**0
+ 17 .bss.flag.2003 00000001  00800068  00800068  000004fa  2**0
                   ALLOC
  18 .text.Dio_PinMode 0000010c  000000ae  000000ae  00000142  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
@@ -166,7 +166,7 @@ void app_toggleLED()
 {
 	static u8 flag = 0;
 	if(flag == 0)
- 3d8:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <flag.2002>
+ 3d8:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <flag.2003>
  3dc:	81 11       	cpse	r24, r1
  3de:	08 c0       	rjmp	.+16     	; 0x3f0 <app_toggleLED+0x18>
 	{
@@ -176,7 +176,7 @@ void app_toggleLED()
  3e4:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
 		flag = 1;
  3e8:	81 e0       	ldi	r24, 0x01	; 1
- 3ea:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <flag.2002>
+ 3ea:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <flag.2003>
  3ee:	08 95       	ret
 	}
 	else
@@ -186,7 +186,7 @@ void app_toggleLED()
  3f2:	84 e1       	ldi	r24, 0x14	; 20
  3f4:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
 		flag = 0;
- 3f8:	10 92 68 00 	sts	0x0068, r1	; 0x800068 <flag.2002>
+ 3f8:	10 92 68 00 	sts	0x0068, r1	; 0x800068 <flag.2003>
  3fc:	08 95       	ret
 
 Disassembly of section .text.dio_init:
@@ -210,9 +210,9 @@ void dio_init()
 Disassembly of section .text.main:
 
 000003fe <main>:
-#include "main.h"
 
-#define F_CPU 16000000UL
+#define F_CPU 8000000UL
+void app_toggleLED();
 int main(void)
 {
 	dio_init();

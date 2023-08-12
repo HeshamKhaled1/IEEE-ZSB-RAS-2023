@@ -400,13 +400,13 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x13fd
+.debug_info     0x0000000000000000     0x13e3
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr5/memx-const/crtatmega32.o
- .debug_info    0x00000000000004e6      0x3c2 main.o
- .debug_info    0x00000000000008a8      0x4c9 MCAL/DIO/Dio.o
- .debug_info    0x0000000000000d71      0x277 MCAL/GI/GI.o
- .debug_info    0x0000000000000fe8      0x415 MCAL/Timer 0/Timer0.o
+ .debug_info    0x00000000000004e6      0x3b5 main.o
+ .debug_info    0x000000000000089b      0x4bc MCAL/DIO/Dio.o
+ .debug_info    0x0000000000000d57      0x277 MCAL/GI/GI.o
+ .debug_info    0x0000000000000fce      0x415 MCAL/Timer 0/Timer0.o
 
 .debug_abbrev   0x0000000000000000      0x723
  *(.debug_abbrev)
@@ -480,8 +480,8 @@ LOAD data_init
  .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x3c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr5/memx-const/crtatmega32.o
 
-.bss.flag.2002  0x0000000000800068        0x1
- .bss.flag.2002
+.bss.flag.2003  0x0000000000800068        0x1
+ .bss.flag.2003
                 0x0000000000800068        0x1 main.o
 
 .bss.Counter_CTC.2017

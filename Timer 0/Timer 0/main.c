@@ -6,7 +6,8 @@
  */ 
 #include "main.h"
 
-#define F_CPU 16000000UL
+#define F_CPU 8000000UL
+void app_toggleLED();
 int main(void)
 {
 	dio_init();
