@@ -5,97 +5,97 @@ Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .text         000000ae  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00800060  00800060  000004fe  2**0
+  1 .data         00000000  00800060  00800060  000004fa  2**0
                   ALLOC, LOAD, DATA
-  2 .comment      0000002f  00000000  00000000  000004fe  2**0
+  2 .comment      0000002f  00000000  00000000  000004fa  2**0
                   CONTENTS, READONLY
-  3 .stack.descriptors.hdr 0000000e  00000000  00000000  0000052d  2**0
+  3 .stack.descriptors.hdr 0000000e  00000000  00000000  00000529  2**0
                   CONTENTS, READONLY
-  4 .debug_aranges 000000e8  00000000  00000000  0000053b  2**0
+  4 .debug_aranges 000000e8  00000000  00000000  00000537  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   0000140a  00000000  00000000  00000623  2**0
+  5 .debug_info   000013fd  00000000  00000000  0000061f  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 00000723  00000000  00000000  00001a2d  2**0
+  6 .debug_abbrev 00000723  00000000  00000000  00001a1c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   000006d7  00000000  00000000  00002150  2**0
+  7 .debug_line   000006d1  00000000  00000000  0000213f  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  000001f0  00000000  00000000  00002828  2**2
+  8 .debug_frame  000001f0  00000000  00000000  00002810  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000001dc  00000000  00000000  00002a18  2**0
+  9 .debug_str    000001dc  00000000  00000000  00002a00  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000494  00000000  00000000  00002bf4  2**0
+ 10 .debug_loc    00000494  00000000  00000000  00002bdc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 000000a8  00000000  00000000  00003088  2**0
+ 11 .debug_ranges 000000a8  00000000  00000000  00003070  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .text         00000004  0000045c  0000045c  000004f0  2**1
+ 12 .text         00000004  00000458  00000458  000004ec  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00003130  2**2
+ 13 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00003118  2**2
                   CONTENTS, READONLY, DEBUGGING
- 14 .text.app_toggleLED 00000026  000003dc  000003dc  00000470  2**1
+ 14 .text.app_toggleLED 00000026  000003d8  000003d8  0000046c  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 15 .text.dio_init 00000012  00000442  00000442  000004d6  2**1
+ 15 .text.dio_init 00000012  0000043e  0000043e  000004d2  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 16 .text.main    00000016  00000402  00000402  00000496  2**1
+ 16 .text.main    00000016  000003fe  000003fe  00000492  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 17 .bss.flag.2002 00000001  00800068  00800068  000004fe  2**0
+ 17 .bss.flag.2002 00000001  00800068  00800068  000004fa  2**0
                   ALLOC
  18 .text.Dio_PinMode 0000010c  000000ae  000000ae  00000142  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
  19 .text.Dio_PinWrite 0000010c  000001ba  000001ba  0000024e  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 20 .text.GI_Enable 00000008  00000454  00000454  000004e8  2**1
+ 20 .text.GI_Enable 00000008  00000450  00000450  000004e4  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 21 .text.Timer0_init 0000002e  000003ae  000003ae  00000442  2**1
+ 21 .text.Timer0_init 0000002a  000003ae  000003ae  00000442  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 22 .text.Timer0_setCallBack_CTC 00000014  0000042e  0000042e  000004c2  2**1
+ 22 .text.Timer0_setCallBack_CTC 00000014  0000042a  0000042a  000004be  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
  23 .text.__vector_11 00000076  000002c6  000002c6  0000035a  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
  24 .text.__vector_10 00000072  0000033c  0000033c  000003d0  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 25 .bss.Counter_CTC.2017 00000002  00800060  00800060  000004fe  2**0
+ 25 .bss.Counter_CTC.2017 00000002  00800060  00800060  000004fa  2**0
                   ALLOC
- 26 .bss.Counter_OVF.2011 00000002  00800062  00800062  000004fe  2**0
+ 26 .bss.Counter_OVF.2011 00000002  00800062  00800062  000004fa  2**0
                   ALLOC
- 27 .bss.Timer0_pfCTC 00000002  00800064  00800064  000004fe  2**0
+ 27 .bss.Timer0_pfCTC 00000002  00800064  00800064  000004fa  2**0
                   ALLOC
- 28 .bss.Timer0_pfOVF 00000002  00800066  00800066  000004fe  2**0
+ 28 .bss.Timer0_pfOVF 00000002  00800066  00800066  000004fa  2**0
                   ALLOC
- 29 .text.__dummy_fini 00000002  00000464  00000464  000004f8  2**1
+ 29 .text.__dummy_fini 00000002  00000460  00000460  000004f4  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 30 .text.__dummy_funcs_on_exit 00000002  00000466  00000466  000004fa  2**1
+ 30 .text.__dummy_funcs_on_exit 00000002  00000462  00000462  000004f6  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 31 .text.__dummy_simulator_exit 00000002  00000468  00000468  000004fc  2**1
+ 31 .text.__dummy_simulator_exit 00000002  00000464  00000464  000004f8  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 32 .text.exit    00000016  00000418  00000418  000004ac  2**1
+ 32 .text.exit    00000016  00000414  00000414  000004a8  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
- 33 .text._Exit   00000004  00000460  00000460  000004f4  2**1
+ 33 .text._Exit   00000004  0000045c  0000045c  000004f0  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
    0:	0c 94 2d 00 	jmp	0x5a	; 0x5a <__ctors_end>
-   4:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-   8:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-   c:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  10:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  14:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  18:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  1c:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  20:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  24:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
+   4:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+   8:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+   c:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  10:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  14:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  18:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  1c:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  20:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  24:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
   28:	0c 94 9e 01 	jmp	0x33c	; 0x33c <__vector_10>
   2c:	0c 94 63 01 	jmp	0x2c6	; 0x2c6 <__vector_11>
-  30:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  34:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  38:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  3c:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  40:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  44:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  48:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  4c:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
-  50:	0c 94 2e 02 	jmp	0x45c	; 0x45c <__bad_interrupt>
+  30:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  34:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  38:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  3c:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  40:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  44:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  48:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  4c:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
+  50:	0c 94 2c 02 	jmp	0x458	; 0x458 <__bad_interrupt>
 
 00000054 <.dinit>:
   54:	00 60       	ori	r16, 0x00	; 0
@@ -143,8 +143,8 @@ Disassembly of section .text:
   9c:	e9 35       	cpi	r30, 0x59	; 89
   9e:	f4 07       	cpc	r31, r20
   a0:	31 f7       	brne	.-52     	; 0x6e <__do_copy_data+0x8>
-  a2:	0e 94 01 02 	call	0x402	; 0x402 <main>
-  a6:	0c 94 0c 02 	jmp	0x418	; 0x418 <exit>
+  a2:	0e 94 ff 01 	call	0x3fe	; 0x3fe <main>
+  a6:	0c 94 0a 02 	jmp	0x414	; 0x414 <exit>
 
 000000aa <_exit>:
   aa:	f8 94       	cli
@@ -154,81 +154,81 @@ Disassembly of section .text:
 
 Disassembly of section .text:
 
-0000045c <__bad_interrupt>:
- 45c:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+00000458 <__bad_interrupt>:
+ 458:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
 
 Disassembly of section .text.app_toggleLED:
 
-000003dc <app_toggleLED>:
+000003d8 <app_toggleLED>:
 }
 
 void app_toggleLED()
 {
 	static u8 flag = 0;
 	if(flag == 0)
- 3dc:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <flag.2002>
- 3e0:	81 11       	cpse	r24, r1
- 3e2:	08 c0       	rjmp	.+16     	; 0x3f4 <app_toggleLED+0x18>
+ 3d8:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <flag.2002>
+ 3dc:	81 11       	cpse	r24, r1
+ 3de:	08 c0       	rjmp	.+16     	; 0x3f0 <app_toggleLED+0x18>
 	{
 		Dio_PinWrite(_PB0, HIGH);
- 3e4:	61 e0       	ldi	r22, 0x01	; 1
- 3e6:	84 e1       	ldi	r24, 0x14	; 20
- 3e8:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
+ 3e0:	61 e0       	ldi	r22, 0x01	; 1
+ 3e2:	84 e1       	ldi	r24, 0x14	; 20
+ 3e4:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
 		flag = 1;
- 3ec:	81 e0       	ldi	r24, 0x01	; 1
- 3ee:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <flag.2002>
- 3f2:	08 95       	ret
+ 3e8:	81 e0       	ldi	r24, 0x01	; 1
+ 3ea:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <flag.2002>
+ 3ee:	08 95       	ret
 	}
 	else
 	{
 		Dio_PinWrite(_PB0, LOW);
- 3f4:	62 e0       	ldi	r22, 0x02	; 2
- 3f6:	84 e1       	ldi	r24, 0x14	; 20
- 3f8:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
+ 3f0:	62 e0       	ldi	r22, 0x02	; 2
+ 3f2:	84 e1       	ldi	r24, 0x14	; 20
+ 3f4:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
 		flag = 0;
- 3fc:	10 92 68 00 	sts	0x0068, r1	; 0x800068 <flag.2002>
- 400:	08 95       	ret
+ 3f8:	10 92 68 00 	sts	0x0068, r1	; 0x800068 <flag.2002>
+ 3fc:	08 95       	ret
 
 Disassembly of section .text.dio_init:
 
-00000442 <dio_init>:
+0000043e <dio_init>:
 	return 0;
 }
 
 void dio_init()
 {
 	Dio_PinMode(_PB0, OUTPUT);
- 442:	61 e0       	ldi	r22, 0x01	; 1
- 444:	84 e1       	ldi	r24, 0x14	; 20
- 446:	0e 94 57 00 	call	0xae	; 0xae <__data_load_end>
+ 43e:	61 e0       	ldi	r22, 0x01	; 1
+ 440:	84 e1       	ldi	r24, 0x14	; 20
+ 442:	0e 94 57 00 	call	0xae	; 0xae <__data_load_end>
 	Dio_PinWrite(_PB0, LOW);
- 44a:	62 e0       	ldi	r22, 0x02	; 2
- 44c:	84 e1       	ldi	r24, 0x14	; 20
- 44e:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
- 452:	08 95       	ret
+ 446:	62 e0       	ldi	r22, 0x02	; 2
+ 448:	84 e1       	ldi	r24, 0x14	; 20
+ 44a:	0e 94 dd 00 	call	0x1ba	; 0x1ba <Dio_PinWrite>
+ 44e:	08 95       	ret
 
 Disassembly of section .text.main:
 
-00000402 <main>:
+000003fe <main>:
 #include "main.h"
 
 #define F_CPU 16000000UL
 int main(void)
 {
 	dio_init();
- 402:	0e 94 21 02 	call	0x442	; 0x442 <dio_init>
+ 3fe:	0e 94 1f 02 	call	0x43e	; 0x43e <dio_init>
 	/* Enable Global Interrupt */
 	GI_Enable();
- 406:	0e 94 2a 02 	call	0x454	; 0x454 <GI_Enable>
+ 402:	0e 94 28 02 	call	0x450	; 0x450 <GI_Enable>
 	/* Set call back */
 	Timer0_setCallBack_CTC(&app_toggleLED);
- 40a:	8e ee       	ldi	r24, 0xEE	; 238
- 40c:	91 e0       	ldi	r25, 0x01	; 1
- 40e:	0e 94 17 02 	call	0x42e	; 0x42e <Timer0_setCallBack_CTC>
+ 406:	8c ee       	ldi	r24, 0xEC	; 236
+ 408:	91 e0       	ldi	r25, 0x01	; 1
+ 40a:	0e 94 15 02 	call	0x42a	; 0x42a <Timer0_setCallBack_CTC>
 	/* Start Timer */
 	Timer0_init();
- 412:	0e 94 d7 01 	call	0x3ae	; 0x3ae <Timer0_init>
- 416:	ff cf       	rjmp	.-2      	; 0x416 <main+0x14>
+ 40e:	0e 94 d7 01 	call	0x3ae	; 0x3ae <Timer0_init>
+ 412:	ff cf       	rjmp	.-2      	; 0x412 <__EEPROM_REGION_LENGTH__+0x12>
 
 Disassembly of section .text.Dio_PinMode:
 
@@ -538,22 +538,22 @@ void Dio_PinWrite(u8 ch, u8 Mode)
 
 Disassembly of section .text.GI_Enable:
 
-00000454 <GI_Enable>:
+00000450 <GI_Enable>:
 
 /* ----------------- Software Interfaces definition -----------------*/
 
 void GI_Enable()
 {
     Set_bit(EXTI_SREG, I_BIT);
- 454:	8f b7       	in	r24, 0x3f	; 63
- 456:	80 68       	ori	r24, 0x80	; 128
- 458:	8f bf       	out	0x3f, r24	; 63
- 45a:	08 95       	ret
+ 450:	8f b7       	in	r24, 0x3f	; 63
+ 452:	80 68       	ori	r24, 0x80	; 128
+ 454:	8f bf       	out	0x3f, r24	; 63
+ 456:	08 95       	ret
 
 Disassembly of section .text.Timer0_init:
 
 000003ae <Timer0_init>:
-		Clr_bit(TIMERS_TCCR0, WGM01);
+		TIMERS_TCNT0 = TIMER0_PRELOAD_VALUE;
 	#elif TIMER_MODE == MODE_PWM
 		Set_bit(TIMERS_TCCR0, WGM00);
 		Clr_bit(TIMERS_TCCR0, WGM01);
@@ -566,82 +566,73 @@ Disassembly of section .text.Timer0_init:
  3b4:	84 b7       	in	r24, 0x34	; 52
  3b6:	88 60       	ori	r24, 0x08	; 8
  3b8:	84 bf       	out	0x34, r24	; 52
+		/* Set compare match register */
+		TIMERS_OCR0 = TIMER0_COMPARE_VALUE;
+ 3ba:	83 e6       	ldi	r24, 0x63	; 99
+ 3bc:	8c bf       	out	0x3c, r24	; 60
 
 	/* Enable Interrupt */
 	#if TIMER_INTERRUPT == INTERRUPT_OVERFLOW
 		Set_bit(TIMERS_TIMSK, TOIE0);
 	#elif TIMER_INTERRUPT == INTERRUPT_CTC
 		Set_bit(TIMERS_TIMSK, OCIE0);
- 3ba:	89 b7       	in	r24, 0x39	; 57
- 3bc:	82 60       	ori	r24, 0x02	; 2
- 3be:	89 bf       	out	0x39, r24	; 57
-		Number of ticks for 0.25 overflow = 025 * 256 = 64 ticks
-		Preload_value = 256 - 64 = 192
-		So >>> 3907 overflows & preload_value = 192 in the 3907th
-	*/
-	/* Set compare match register */
-	TIMERS_OCR0 = TIMER0_COMPARE_VALUE;
- 3c0:	83 e6       	ldi	r24, 0x63	; 99
- 3c2:	8c bf       	out	0x3c, r24	; 60
-	
-	/* Set preload value */
-	TIMERS_TCNT0 = TIMER0_PRELOAD_VALUE;
- 3c4:	80 ec       	ldi	r24, 0xC0	; 192
- 3c6:	82 bf       	out	0x32, r24	; 50
+ 3be:	89 b7       	in	r24, 0x39	; 57
+ 3c0:	82 60       	ori	r24, 0x02	; 2
+ 3c2:	89 bf       	out	0x39, r24	; 57
 	#if TIMER_PRESCALER == CLK_1
 		Clr_bit(TIMERS_TCCR0, CS02);
 		Clr_bit(TIMERS_TCCR0, CS01);
-		Set_bit(TIMERS_TIMSK, CS00);
+		Set_bit(TIMERS_TCCR0, CS00);
 	#elif TIMER_PRESCALER == CLK_8
 		Clr_bit(TIMERS_TCCR0, CS02);
- 3c8:	84 b7       	in	r24, 0x34	; 52
- 3ca:	8b 7f       	andi	r24, 0xFB	; 251
- 3cc:	84 bf       	out	0x34, r24	; 52
+ 3c4:	84 b7       	in	r24, 0x34	; 52
+ 3c6:	8b 7f       	andi	r24, 0xFB	; 251
+ 3c8:	84 bf       	out	0x34, r24	; 52
 		Set_bit(TIMERS_TCCR0, CS01);
- 3ce:	84 b7       	in	r24, 0x34	; 52
- 3d0:	82 60       	ori	r24, 0x02	; 2
- 3d2:	84 bf       	out	0x34, r24	; 52
-		Clr_bit(TIMERS_TIMSK, CS00);
- 3d4:	89 b7       	in	r24, 0x39	; 57
- 3d6:	8e 7f       	andi	r24, 0xFE	; 254
- 3d8:	89 bf       	out	0x39, r24	; 57
- 3da:	08 95       	ret
+ 3ca:	84 b7       	in	r24, 0x34	; 52
+ 3cc:	82 60       	ori	r24, 0x02	; 2
+ 3ce:	84 bf       	out	0x34, r24	; 52
+		Clr_bit(TIMERS_TCCR0, CS00);
+ 3d0:	84 b7       	in	r24, 0x34	; 52
+ 3d2:	8e 7f       	andi	r24, 0xFE	; 254
+ 3d4:	84 bf       	out	0x34, r24	; 52
+ 3d6:	08 95       	ret
 
 Disassembly of section .text.Timer0_setCallBack_CTC:
 
-0000042e <Timer0_setCallBack_CTC>:
+0000042a <Timer0_setCallBack_CTC>:
 
 u8 Timer0_setCallBack_CTC(void(*pf)(void))
 {
 	u8 ret = E_OK;
 	
 	if(pf != NULL)
- 42e:	00 97       	sbiw	r24, 0x00	; 0
- 430:	31 f0       	breq	.+12     	; 0x43e <Timer0_setCallBack_CTC+0x10>
+ 42a:	00 97       	sbiw	r24, 0x00	; 0
+ 42c:	31 f0       	breq	.+12     	; 0x43a <Timer0_setCallBack_CTC+0x10>
 	{
 		Timer0_pfCTC = pf;
- 432:	90 93 65 00 	sts	0x0065, r25	; 0x800065 <Timer0_pfCTC+0x1>
- 436:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <Timer0_pfCTC>
+ 42e:	90 93 65 00 	sts	0x0065, r25	; 0x800065 <Timer0_pfCTC+0x1>
+ 432:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <Timer0_pfCTC>
 	#endif
 }
 
 u8 Timer0_setCallBack_CTC(void(*pf)(void))
 {
 	u8 ret = E_OK;
- 43a:	80 e0       	ldi	r24, 0x00	; 0
- 43c:	08 95       	ret
+ 436:	80 e0       	ldi	r24, 0x00	; 0
+ 438:	08 95       	ret
 	{
 		Timer0_pfCTC = pf;
 	}
 	else
 	{
 		ret = E_NOT_OK;
- 43e:	81 e0       	ldi	r24, 0x01	; 1
+ 43a:	81 e0       	ldi	r24, 0x01	; 1
 	}
 	
 	return ret;
 }
- 440:	08 95       	ret
+ 43c:	08 95       	ret
 
 Disassembly of section .text.__vector_11:
 
@@ -791,31 +782,31 @@ void __vector_10(void)
 
 Disassembly of section .text.__dummy_fini:
 
-00000464 <_fini>:
- 464:	08 95       	ret
+00000460 <_fini>:
+ 460:	08 95       	ret
 
 Disassembly of section .text.__dummy_funcs_on_exit:
 
-00000466 <__funcs_on_exit>:
- 466:	08 95       	ret
+00000462 <__funcs_on_exit>:
+ 462:	08 95       	ret
 
 Disassembly of section .text.__dummy_simulator_exit:
 
-00000468 <__simulator_exit>:
- 468:	08 95       	ret
+00000464 <__simulator_exit>:
+ 464:	08 95       	ret
 
 Disassembly of section .text.exit:
 
-00000418 <exit>:
- 418:	ec 01       	movw	r28, r24
- 41a:	0e 94 33 02 	call	0x466	; 0x466 <__funcs_on_exit>
- 41e:	0e 94 32 02 	call	0x464	; 0x464 <_fini>
- 422:	ce 01       	movw	r24, r28
- 424:	0e 94 34 02 	call	0x468	; 0x468 <__simulator_exit>
- 428:	ce 01       	movw	r24, r28
- 42a:	0e 94 30 02 	call	0x460	; 0x460 <_Exit>
+00000414 <exit>:
+ 414:	ec 01       	movw	r28, r24
+ 416:	0e 94 31 02 	call	0x462	; 0x462 <__funcs_on_exit>
+ 41a:	0e 94 30 02 	call	0x460	; 0x460 <_fini>
+ 41e:	ce 01       	movw	r24, r28
+ 420:	0e 94 32 02 	call	0x464	; 0x464 <__simulator_exit>
+ 424:	ce 01       	movw	r24, r28
+ 426:	0e 94 2e 02 	call	0x45c	; 0x45c <_Exit>
 
 Disassembly of section .text._Exit:
 
-00000460 <_Exit>:
- 460:	0e 94 55 00 	call	0xaa	; 0xaa <_exit>
+0000045c <_Exit>:
+ 45c:	0e 94 55 00 	call	0xaa	; 0xaa <_exit>

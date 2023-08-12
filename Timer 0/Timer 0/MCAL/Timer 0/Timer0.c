@@ -20,12 +20,16 @@ void Timer0_init()
 	#if TIMER_MODE == MODE_NORMAL
 		Clr_bit(TIMERS_TCCR0, WGM00);
 		Clr_bit(TIMERS_TCCR0, WGM01);
+		/* Set preload value */
+		TIMERS_TCNT0 = TIMER0_PRELOAD_VALUE;
 	#elif TIMER_MODE == MODE_PWM
 		Set_bit(TIMERS_TCCR0, WGM00);
 		Clr_bit(TIMERS_TCCR0, WGM01);
 	#elif TIMER_MODE == MODE_CTC
 		Clr_bit(TIMERS_TCCR0, WGM00);
 		Set_bit(TIMERS_TCCR0, WGM01);
+		/* Set compare match register */
+		TIMERS_OCR0 = TIMER0_COMPARE_VALUE;
 	#elif TIMER_MODE == MODE_FAST_PWM
 		Set_bit(TIMERS_TCCR0, WGM00);
 		Set_bit(TIMERS_TCCR0, WGM01);
@@ -49,33 +53,28 @@ void Timer0_init()
 		Preload_value = 256 - 64 = 192
 		So >>> 3907 overflows & preload_value = 192 in the 3907th
 	*/
-	/* Set compare match register */
-	TIMERS_OCR0 = TIMER0_COMPARE_VALUE;
-	
-	/* Set preload value */
-	TIMERS_TCNT0 = TIMER0_PRELOAD_VALUE;
-	
+
 	/* Set prescaler value */
 	#if TIMER_PRESCALER == CLK_1
 		Clr_bit(TIMERS_TCCR0, CS02);
 		Clr_bit(TIMERS_TCCR0, CS01);
-		Set_bit(TIMERS_TIMSK, CS00);
+		Set_bit(TIMERS_TCCR0, CS00);
 	#elif TIMER_PRESCALER == CLK_8
 		Clr_bit(TIMERS_TCCR0, CS02);
 		Set_bit(TIMERS_TCCR0, CS01);
-		Clr_bit(TIMERS_TIMSK, CS00);
+		Clr_bit(TIMERS_TCCR0, CS00);
 	#elif TIMER_PRESCALER == CLK_64
 		Clr_bit(TIMERS_TCCR0, CS02);
 		Set_bit(TIMERS_TCCR0, CS01);
-		Set_bit(TIMERS_TIMSK, CS00);
+		Set_bit(TIMERS_TCCR0, CS00);
 	#elif TIMER_PRESCALER == CLK_256
 		Set_bit(TIMERS_TCCR0, CS02);
 		Clr_bit(TIMERS_TCCR0, CS01);
-		Clr_bit(TIMERS_TIMSK, CS00);
+		Clr_bit(TIMERS_TCCR0, CS00);
 	#elif TIMER_PRESCALER == CLK_1024
 		Set_bit(TIMERS_TCCR0, CS02);
 		Clr_bit(TIMERS_TCCR0, CS01);
-		Set_bit(TIMERS_TIMSK, CS00);
+		Set_bit(TIMERS_TCCR0, CS00);
 	#endif
 }
 
